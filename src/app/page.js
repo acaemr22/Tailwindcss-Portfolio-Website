@@ -6,7 +6,6 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
-import Image from "next/image";
 import DaRealEmreImg from "../../public/da-real-emre.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
@@ -70,10 +69,9 @@ export default function Home() {
           </div>
 
           <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 mt-20 mx-auto overflow-hidden">
-            <Image
+            <img
               src={DaRealEmreImg}
-              fill="fill"
-              style={{ objectFit: "cover" }}
+              className="object-cover"
             />
           </div>
         </section>
@@ -97,9 +95,9 @@ export default function Home() {
           </div>
 
           <div className="flex items-center flex-col">
-            <Card image={design} />
-            <Card image={consulting} />
-            <Card image={code} />
+            <Card img={design} />
+            <Card img={consulting} />
+            <Card img={code} />
           </div>
         </section>
 
@@ -123,22 +121,22 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 gap-5 lg:gap-10 md:p-20">
             <div className="rounded-xl overflow-hidden ">
-              <Image src={web1} />
+              <img src={web1} />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <Image src={web2} />
+              <img src={web2} />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <Image className="h-full" src={web3} />
+              <img className="h-full" src={web3} />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <Image src={web4} />
+              <img src={web4} />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <Image className="h-full" src={web5} />
+              <img className="h-full" src={web5} />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <Image src={web6} />
+              <img src={web6} />
             </div>
           </div>
         </section>
